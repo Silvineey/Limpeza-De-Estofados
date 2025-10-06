@@ -1,58 +1,82 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LS Limpeza Estofados</title>
     <meta name="description" content="LS Limpeza e Higienização Estofados em Fortaleza: limpeza e higienização de sofás, poltronas, camas, cadeiras de carro e cadeirinhas de bebê. Lavagem a seco profissional, cuidando de cada estofado com qualidade.">
     <link rel="stylesheet" href="Design.CSS">
-    <link rel="shortcut icon" href="./icons8-three-seater-sofa-50.png" type="image/x-icon">
+    <link rel="shortcut icon" href="imagens/icons8-three-seater-sofa-50.png" type="image/x-icon">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>LS Limpeza Estofados</title>
 </head>
+
 <body>
     <header>
-        <div class="menu">
+        <div class="header">
             <h3>Ls Limpeza Estofados</h3>
             <nav>
                 <ol class="barra">
-                    <li><a href="index.html">Menu</a></li>
-                    <li><a href="Resultados.html">Resultados</a></li>
-                    <li><a href="contatos.html">Contatos</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#servicos">Nossos serviços</a></li>
+                    <li><a href="#resultados">Resultados</a></li>
+                    <li><a href="#contato">Contatos</a></li>
                 </ol>
             </nav>
         </div>
     </header>
     <main class="principal">
-        <div class="caixas">
+        <div id="menu" class="background">
+            <h1>Lavagem de Estofados em fortaleza e região</h1>
+            <h2>Precisando de uma limpeza no seu sofá cama poltronas ou afins?</h2>
+            <p>Entre em contato com a gente!</p>
+            <a href="https://wa.me/558587878408" target="_blank"><img src="imagens/zap.png.png" alt="imagem da logo do whatsapp"></a>
+        </div>
 
+        <h2>Nossos serviços</h2>
+        <div class="servicos" id="servicos">
             <div class="caixa">
-                <h2>lavagem de camas</h2>
-                    <div class="sobreposicao">
-                        <img class="imgmain" id="img1" src="1.jpg" alt="">
-                        <img class="imgmain" id="img2" src="2.jpg" alt="">
-                        <img id="img4" class="oculto" src="4.jpg" alt="">
-                        <img id="img5" class="oculto" src="5.jpg" alt="">
-                    </div>
-                    <div>
-                        <button>Ver mais</button>
-                    </div>
-            </div>
-
-            <div class="caixa">
-                <h2>lavagem de sofás</h2>
-                <div>
-                    <img src="after1.jpg" alt="">
-                    <img src="before1.jpg" alt="">
+                <div class="caixa">
+                    <h2>Lavagem de camas</h2>
+                    <img src="imagens/before3.jpeg" alt="">
+                    <img src="imagens/after3.jpg" alt="">
+                </div>
+                <div class="caixa">
+                    <h2>Lavagem de poltronas</h2>
+                    <img src="imagens/PontronaAntes.jpg" alt="">
+                    <img src="imagens/pontronaDepois.jpg" alt="">
                 </div>
 
             </div>
+        </div>
 
+        <div class="servicos">
             <div class="caixa">
-                <h2>Lavagem de poltronas</h2>
-                <img src="PontronaAntes.jpg" alt="">
-                <img src="pontronaDepois.jpg" alt="">
+                <h2>Lavagem de sofás</h2>
+                <img src="imagens/before1.jpg" alt="">
+                <img src="imagens/after1.jpg" alt="">
+            </div>
+            <div class="caixa">
+                <h2>Lavagem de cadeiras e puffs</h2>
+                <img src="imagens/cadeiras.jpg" alt="">
+                <img src="imagens/puff.jpg" alt="">
             </div>
         </div>
+        <h2>Resultados</h2>
+        <div class="conteiner-slider">
+            <button id="prev-button"><img src="imagens/icons8-arrow-left-50.png"> </button>
+            <div class="conteiner-imagens">
+                <img src="imagens/after2.jpg" alt="" class="slideron">
+                <img src="imagens/before2.jpg" alt="" class="slider">
+                <img src="imagens/1.jpg" alt="" class="slider">
+                <img src="imagens/2.jpg" alt="" class="slider">
+            </div>
+            <button id="next-button"><img src="imagens/icons8-arrow-right-50.png"> </button>
+        </div>
     </main>
-    <script src="script.js"></script>
 </body>
+
 </html>
