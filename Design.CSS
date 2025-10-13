@@ -14,12 +14,12 @@ header{
     box-shadow: 0px 2px 10px#3f7373;
     background-color: #3f7373;
     padding: 1em 1em;
-    width: 100%;
+    max-width: 100%;
     z-index: 1000;
 }
 .header{
     justify-content: space-evenly;
-    width: 100%;
+    nav-index: 100%;
     display: flex;
 }
 nav ol{
@@ -48,7 +48,7 @@ body{
     background-color: #BABDBF;
 }
 .principal{
-    width: 100%;
+    max-width: 100%;
     text-align: center;
 }
 .background{
@@ -62,22 +62,94 @@ body{
 .background img:hover{
     transform: scale(1.2);
 }
+
+
+.separacao{
+    padding: 1.5em;
+}
 .servicos{
+    gap: 1em;
     justify-content: center;
     display: flex;
 }
-.servicos img{
-    margin-left: 2em;
-    border-radius: 250px;
-    width: 15em;
-    transition: all 0.9s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+.caixa{
+    box-shadow: 1px 1px 1px #48a8a8;
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-.servicos img:hover{
-    transform: scale(1.1);
-    box-shadow: 1em 1em 1em black;
+.caixa:hover{
+    cursor: pointer;
+    transform: translateY(-10px);
+    box-shadow: 1px 1px 10px #48a8a8;
+}
+
+.servicos h2{
+    margin: 0.5em;
 }
 .caixa{
-    display: flex;
-    align-items: center;
+    padding: 0.5em;
+    border-radius: 25px;
+    border: 1px solid #b1b8bd;
+    background-color: #b1b8bd;
+}
+.caixa img{
+    border-radius: 50px;
+    width: 150px;
+}
 
+.categoria{
+    justify-content: center;
+    display: flex;
+    padding-top: 1em;
+}
+.oculto{
+    display: flex;
+    border-radius: 25px;
+    padding: 1em;
+    border: 1px solid #b1b8bd;
+    background-color: #b1b8bd;
+}
+.caixinha img{
+    width: 180px;
+}
+.caixinha{
+    flex-wrap: wrap;
+    gap: 1em;
+    display: flex;
+}
+.categoria img{
+    border-radius: 55px;
+
+}
+.oculto p{
+    text-align: center;
+    font-size: 25px;
+    background-color: #BABDBF;
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.botao:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    transform: translateY(-10px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    text-align: center;
+
+    border-radius: 2px;
+    box-shadow: 0px 2px 10px#3f7373;
+    background-color: #3f7373;
+    padding: 1em 1em;
+    max-width: 100%;
 }
