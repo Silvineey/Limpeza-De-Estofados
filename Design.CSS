@@ -169,3 +169,48 @@ footer img:hover{
 footer h6{
     padding: 1em 1em;
 }
+
+@media screen and (max-width: 600px) {
+    header {
+        padding: 0.5em;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header {
+        flex-direction: column;
+        gap: 0.5em;
+    }
+
+    nav ol {
+        flex-direction: column;
+        gap: 0.5em;
+    }
+
+    .servicos {
+        flex-direction: column;
+        gap: 0.5em;
+        padding: 0 1em;
+    }
+
+    .caixa img {
+        width: 120px;
+    }
+
+    .caixinha img {
+        width: 120px;
+    }
+
+    .categoria {
+        flex-direction: column;
+        padding-top: 0.5em;
+    }
+
+    .oculto p {
+        font-size: 18px;
+    }
+
+    .background {
+        padding-top: 250px;
+    }
+}
