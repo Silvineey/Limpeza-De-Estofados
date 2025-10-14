@@ -144,17 +144,10 @@ body{
     cursor: pointer;
     transform: translateY(-10px);
 }
-
-
-
-
-
-
-
-
-
-
-
+.fim{
+    padding-bottom: 1em;
+    font-size: 15px;
+}
 
 
 footer{
@@ -173,6 +166,6 @@ footer img:hover{
     cursor: pointer;
     transform: scale(1.1);
 }
-footer h5{
-    padding-top: 2em;
+footer h6{
+    padding: 1em 1em;
 }
