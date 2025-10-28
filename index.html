@@ -4,13 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="LS Limpeza e Higienização Estofados em Fortaleza: limpeza e higienização de sofás, poltronas, camas, cadeiras de carro e cadeirinhas de bebê. Lavagem a seco profissional, cuidando de cada estofado com qualidade.">
+    <meta name="description"
+        content="LS Limpeza e Higienização Estofados em Fortaleza: limpeza e higienização de sofás, poltronas, camas, cadeiras de carro e cadeirinhas de bebê. Lavagem a seco profissional, cuidando de cada estofado com qualidade.">
     <link rel="stylesheet" href="Design.CSS">
     <link rel="shortcut icon" href="imagens/icons8-three-seater-sofa-50.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <title>LS Lavagem de Estofados</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Lavagem de estofados - LS Estofados</title>
     <script defer src="script.js"></script>
 </head>
 
@@ -18,116 +20,289 @@
     <header>
         <div class="header">
             <h3>LS</h3>
-            <nav>
+            <nav class="nav">
                 <ol class="barra">
                     <li><a href="#menu">Menu</a></li>
-                    <li><a href="#servicos">Nossos serviços</a></li>
+                    <li><a href="#apresentacao">Nossos serviços</a></li>
+                    <li><a href="#resultados">Resultados</a></li>
+                    <li><a href="#contatos">Contatos</a></li>
+                </ol>
+            </nav>
+
+            <nav class="navmobile">
+                <div onclick="abrir()" class="cardapio">
+                    <img width="30px" src="imagens/cardapio.png" alt="">
+                </div>
+                <ol class="barramobile">
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#apresentacao">Nossos serviços</a></li>
+                    <li><a href="#resultados">Resultados</a></li>
                     <li><a href="#contatos">Contatos</a></li>
                 </ol>
             </nav>
         </div>
     </header>
-    <main class="principal">
-        <section>
-            <div id="menu" class="background">
-                <h1>Lavagem de Estofados em fortaleza e região valores a partir de R$30</h1>
-                <h2>Precisando de uma limpeza no seu sofá cama poltronas ou afins?</h2>
-                <p>Entre em contato com a gente!</p>
-                <a href="https://wa.me/558587878408" target="_blank"><img src="imagens/zap.png.png" alt="imagem da logo do whatsapp"></a>
+    <main>
+        <section id="menu" class="back">
+            <div class="imgback">
+                <img src="imagens/background.jpeg" alt="papel de parede, é um sofá">
+                <div class="textback">
+                    <h1>Lavagem e higienização de estofados</h1>
+                    <h2>Atendemos em fortaleza e região <br> Serviços a partir de R$30</h2>
+                </div>
             </div>
         </section>
-        <div class="separacao">
-            <h2>Clique para ver mais</h2>
+        <div class="h2a">
+            <h2><a href="#apresentacao">Nossos serviços</a></h2>
         </div>
-        <section class="servicos" id="servicos">
-            <div onclick="sofas()" class="caixa">
-                <h2>Lavagem de sofás</h2>
-                <div>
-                    <img src="imagens/before1.jpg" alt="sofá-cama grande com uma mancha na direita">
-                    <img src="imagens/after1.jpg" alt="sofá-cama após a lavagem, colocado na calçada de uma casa">
-                </div>
-            </div>
-            <div onclick="camas()" class="caixa">
-                <h2>Lavagem de camas</h2>
-                <div>
-                    <img src="imagens/1.jpg" alt="cama suja, no chão, bem marrom, uma mancha forte no meio, antes da limpeza">
-                    <img src="imagens/2.jpg" alt="a mesma cama porém agora totalmente limpa, após a limpeza">
-                </div>
-            </div>
-            <div onclick="cadeiras()" class="caixa">
-                <h2>Lavagem de poltrona</h2>
-                <div>
-                    <img src="imagens/PontronaAntes.jpg" alt="poltrona suja, com diversas manchas, antes da lavagem">
-                    <img src="imagens/pontronaDepois.jpg" alt="poltrona limpa, agora com uma cor praticamente nova e sem manchas, após a lavagem">
-                </div>
-            </div>
-            <div onclick="cadeiras()" class="caixa">
-                <h2>Lavagem de cadeiras</h2>
-                <div>
-                    <img src="imagens/cadeiras.jpg" alt="6 cadeiras enfileiradas e na frente das cadeiras uma maquina de lavagem a seco">
-                </div>
-            </div>
-        </section>
-        
-        <section class="categoria">
-            <div id="cama" class="oculto">
-                <div>
-                    <p onclick="esconder()" class="botao">Ocultar</p>
-                        <div class="caixinha">
-                            <img src="imagens/5.jpg" alt="cama extremamente suja, com diversas manchas marrom como se fosse barro">
-                            <img src="imagens/4.jpg" alt="cama após a limpeza, com a cor originalmente branca, totalmente limpa e renovada">
-                            <img src="imagens/7.jpg" alt="cama branca com manchas amarelas, antes da lavagem">
-                            <img src="imagens/6.jpg" alt="cama totalmente branca após a lavagem">
-                            <img src="imagens/before3.jpeg" alt="cama branca com detalhes de rosa com manchas fortes de marrom">
-                            <img src="imagens/after3.jpg" alt="a mesma cama porém renovada após a lavagem">
-                            <img src="imagens/before2.jpg" alt="cama com uma mancha marrom no meio">
-                            <img src="imagens/after2.jpg" alt="cama limpa apos a limpeza">
+        <section class="apresentacao" id="apresentacao">
+            <div class="caixao">
+                <div class="caixa">
+                    <div>
+                        <img height="220px" src="imagens/6.jpg" alt="cama branca">
+                    </div>
+                    <div>
+                        <h2>Lavagem de camas</h2>
+                        <div>
+                            <p>Com o tempo, o colchão acumula ácaros, fungos e impurezas que afetam a saúde. Fazemos a
+                                higienização completa com produtos profissionais e equipamentos de alta eficiência,
+                                garantindo uma cama limpa, fresca e pronta para um sono tranquilo.</p>
                         </div>
-                </div>
-            </div>
-        </section>
-        <section  class="categoria">
-            <div id="sofa" class="oculto">
-                <div>
-                    <p onclick="esconder()" class="botao">Ocultar</p>
-                        <div class="caixinha">
-                            <img src="imagens/sofa1.jpeg" alt="">
-                            <img src="imagens/sofa2.jpeg" alt="">
-                            <img src="imagens/sofaantes.jpeg" alt="">
-                            <img src="imagens/sofadepois.jpeg" alt="">
-                            <img src="imagens/10.jpeg" alt="">
-                            <img src="imagens/11.jpeg" alt="">
-                            <img src="imagens/12.jpeg" alt="">
-                            <img src="imagens/13.jpeg" alt="">
-                        </div>
-                </div>
-            </div>
-        </section>
-        <section class="categoria">
-            <div id="cadeira" class="oculto">
-                <div>
-                    <p onclick="esconder()" class="botao">Ocultar</p>
-                    <div class="caixinha">
-                        <img src="imagens/puffzinho.jpeg" alt="">
-                        <img src="imagens/puffzinho2.jpeg" alt="">
-                        <img src="imagens/cadeira.jpeg" alt="">
-                        <img src="imagens/cadeira2.jpeg" alt="">
+                    </div>
+                    <div>
+                        <button><a target="_blank"
+                                href="https://wa.me/558587878408?text=Gostaria de solicitar um orçamento!">Solicitar
+                                orçamento</a></button>
+
                     </div>
                 </div>
+                <div class="caixa">
+                    <div>
+                        <img width="400px" height="220px" src="imagens/12.jpeg"
+                            alt="um sofá cinza com uma maquina vermelha na frente">
+                    </div>
+                    <div>
+                        <h2>Lavagem de sofas</h2>
+                        <div>
+                            <p>Com a lavagem de sofá, eliminamos ácaros, manchas e odores, devolvendo o conforto, a
+                                maciez e a aparência de novo ao seu estofado.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <button><a target="_blank"
+                                href="https://wa.me/558587878408?text=Gostaria de solicitar um orçamento!">Solicitar
+                                orçamento</a></button>
+                    </div>
+                </div>
+                <div class="caixa">
+                    <div>
+                        <img height="220px" src="imagens/after5.jpg" alt="poltrona cinza">
+                    </div>
+                    <div>
+                        <h2>Lavagem de poltronas</h2>
+                        <p>Poltronas limpas, confortáveis e sem odores! Nossa lavagem profissional remove poeira, ácaros
+                            e sujeiras profundas, deixando seu ambiente mais saudável e agradável.</p>
+                    </div>
+                    <div>
+                        <button><a target="_blank"
+                                href="https://wa.me/558587878408?text=Gostaria de solicitar um orçamento!">Solicitar
+                                orçamento</a></button>
+
+                    </div>
+                </div>
+                <div class="caixa">
+                    <img height="220px" src="imagens/cadeira.jpeg" alt="4 cadeiras enfileiradas">
+                    <div>
+                        <h2>Lavagem de cadeiras</h2>
+                        <div>
+                            <p>Cadeiras limpas e renovadas! Nossa lavagem profissional remove sujeira, poeira e ácaros,
+                                garantindo mais higiene, conforto e durabilidade para o seu ambiente.</p>
+                        </div>
+                    </div>
+                    <button><a target="_blank"
+                            href="https://wa.me/558587878408?text=Gostaria de solicitar um orçamento!">Solicitar
+                            orçamento</a></button>
+
+                </div>
+                <div class="caixa">
+                    <img width="400px" height="220px" src="imagens/wash-carpet-1.jpg"
+                        alt="passando a maquina de lavagem em um tapete sujo">
+                    <div>
+                        <h2>Lavagem de tapetes</h2>
+                        <div>
+                            <p>Devolva a beleza e o frescor do seu tapete! Nossa lavagem profissional remove sujeira,
+                                manchas e ácaros, garantindo um ambiente mais limpo, perfumado e acolhedor.</p>
+                        </div>
+                    </div>
+                    <button><a target="_blank"
+                            href="https://wa.me/558587878408?text=Gostaria de solicitar um orçamento!">Solicitar
+                            orçamento</a></button>
+
+                </div>
+            </div>
+            </div>
             </div>
         </section>
 
-        <section class="fim"> <!-- Aqui é o fim -->
-            <p>
-                Somos especializados em lavagem à seco de sofás, poltronas, colchões e tapetes em Fortaleza e região <br> <strong>Com 1 ano de atuação na região</strong><br> Cuidamos de cada estofado com qualidade e atenção. <br> Entre em contato e deixe seus móveis limpos e renovados.
-            </p>
+        <div class="h2a">
+            <h2><a href="#resultados">Resultados</a></h2>
+        </div>
+
+        <section class="resultados" id="resultados">
+            <div class="caixasr">
+
+                <div class="caixinhasr">
+                    <div class="img">
+                        <img src="imagens/1.jpg" alt="cama suja antes da limpeza">
+                        <img src="imagens/2.jpg" alt="cama limpa depois da limpeza">
+                        <div id="botoes">
+                            <div class="antes">
+                                <button>Antes</button>
+                            </div>
+                            <div class="depois">
+                                <button>Depois</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="caixinhasr ajuste">
+                    <div class="img">
+                        <img height="330px" src="imagens/5.jpg" alt="cama suja, antes da limpeza">
+                        <img height="330px" src="imagens/4.jpg" alt="cama limpa, depois da limpeza">
+                        <div id="botoes">
+                            <div class="antes">
+                                <button>Antes</button>
+                            </div>
+                            <div class="depois">
+                                <button>Depois</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="caixinhasr">
+                    <div class="img">
+                        <img src="imagens/7.jpg" alt="cama suja antes da limpeza">
+                        <img src="imagens/6.jpg" alt="cama depois da limpeza, limpa">
+                        <div id="botoes">
+                            <div class="antes">
+                                <button>Antes</button>
+                            </div>
+                            <div class="depois">
+                                <button>Depois</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="caixinhasr">
+                    <div class="img">
+                        <img src="imagens/cadeira.jpeg" alt="4 cadeiras enfileiradas antes da limpeza">
+                        <img src="imagens/cadeira2.jpeg" alt="4 cadeiras após a limpeza">
+                        <div id="botoes">
+                            <div class="antes">
+                                <button>Antes</button>
+                            </div>
+                            <div class="depois">
+                                <button>Depois</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="caixinhasr">
+                    <div class="img">
+                        <img src="imagens/before5.jpg" alt="poltrona grande antes da limpeza">
+                        <img src="imagens/after5.jpg" alt="poltrona grande depois da limpeza">
+                        <div id="botoes">
+                            <div class="antes">
+                                <button>Antes</button>
+                            </div>
+                            <div class="depois">
+                                <button>Depois</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="caixinhasr">
+                    <div class="img">
+                        <img src="imagens/PontronaAntes.jpg" alt="poltrona média antes da limpeza">
+                        <img src="imagens/pontronaDepois.jpg" alt="poltrona média após a limpeza">
+                        <div id="botoes">
+                            <div class="antes">
+                                <button>Antes</button>
+                            </div>
+                            <div class="depois">
+                                <button>Depois</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="caixinhasr ajuste">
+                    <div class="img">
+                        <img height="200px" src="imagens/sofaantes.jpeg" alt="sofá antes da lavagem">
+                        <img height="200px" src="imagens/sofadepois.jpeg" alt="sofá depois da lavagem">
+                        <div id="botoes">
+                            <div class="antes">
+                                <button>Antes</button>
+                            </div>
+                            <div class="depois">
+                                <button>Depois</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="caixinhasr ajuste">
+                    <div class="img">
+                        <img height="250px" src="imagens/cadeiraantes.jpeg" alt="cadeira suja, antes da limpeza">
+                        <img height="250px" src="imagens/cadeiradepois.jpeg" alt="cadeira limpa, após a limpeza">
+                        <div id="botoes">
+                            <div class="antes">
+                                <button>Antes</button>
+                            </div>
+                            <div class="depois">
+                                <button>Depois</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+            </div>
         </section>
+
+        <div class="h2a">
+            <h2>Veja mais resultados em nosso instagram</h2>
+            <a target="_blank" href="https://www.instagram.com/lucreciaribeiro77/"><img width="35px"
+                    src="imagens/instagram.png.png" alt=""></a>
+        </div>
+
+        <div class="zap">
+            <a target="_blank" href="https://wa.me/558587878408"><img src="imagens/zap.png.png" alt=""></a>
+        </div>
     </main>
-    <footer id="contato">
-        <h2>Veja mais serviços em nosso instagram</h2>
-        <a target="_blank" href="https://www.instagram.com/lucreciaribeiro77/"><img src="imagens/instagram.png.png" alt=""></a>
-        <a target="_blank" href="https://wa.me/558587878408"><img src="imagens/zap.png.png" alt=""></a>
-        <h6>© 2025 - Developed By Sydney</h6>
+
+
+
+
+
+
+
+
+    <footer id="contatos">
+        <div>
+            <h2>
+                <h2>Precisando de limpeza profissional para seus estofados? Entre em contato conosco agora!</h2>
+            </h2>
+        </div>
+        <div class="footer">
+            <a target="_blank" href="https://wa.me/558587878408"><img src="imagens/zap.png.png" alt=""></a>
+        </div>
+        <div>
+            <h6>© 2025 - Developed By Sydney</h6>
+        </div>
     </footer>
 </body>
 
