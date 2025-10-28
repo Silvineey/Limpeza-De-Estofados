@@ -233,7 +233,27 @@ button:hover {
 button a {
     color: black;
 }
-
+.fim{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+}
+.icons{
+    border-radius: 30px;
+    margin-bottom: 1em;
+    padding: 0.5em;
+    border: 1px solid black;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.icons img{
+    width: 50px;
+}
 
 
 
@@ -250,9 +270,13 @@ footer {
     width: 30px;
 }
 
+/* moboile */
 @media screen and (max-width:1080px) {
     .imgback {
         display: none;
+    }
+    .zap a img{
+        width: 35px;
     }
 }
 
