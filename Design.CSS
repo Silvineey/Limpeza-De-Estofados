@@ -2,232 +2,211 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
 }
-header{
-    background-repeat: no-repeat;
+.backgroundheader{
     background-size: cover;
-    background-position: center;
+    background-repeat: no-repeat;
     background: url("imagens/headerhero.png");
-    height: 100px;
-    width: 1920px;
 }
 body{
-    margin: 0 auto;
-    max-width: 1920px;
-    width: 1920px;
-    height: 6100px;
-    max-height: 6144px;
-    overflow-x: hidden;
+    width: 100%;
 }
-.header{
-    display: flex;
-    justify-content: space-between;
-}
-.header h1{
+header .title{
+    font-size: 20px;
     font-weight: 600;
-    margin-top: 34px;
 }
-.header div{
-    margin-left: 61px ;
-    margin-right: 61px;
+header .number{
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 600;
+    transition: transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-.telefone h2{
-    font-size: 32px;
-    font-weight: 300;
-    margin-top: 40px;
-}
-.icons img{
-    width:52px ;
-    height: 52px;
-    transition: transform 1s cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-.icons img:hover{
+header .number:hover{
     transform: scale(1.1);
 }
-.icons{
-    display: flex;
-    gap: 41px;
-    margin-top: 25px;
+header .iconsheader img{
+    width: 33px;
+    height: 33px;
+    transition: transform 1s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
-.backgroundform{
-    max-width: 1920px;
-    width: 1920px;
-    background: url("imagens/backgroundform.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 1544px;
-    background-size: cover;
-
-}
-.frase img{
-    margin-left: 185px;
-    margin-top: 175px;
-}
-.caixa{
-    margin-right: 112px;
-    display: flex;
-    justify-content: right;
-}
-.form{
-    justify-content: center;
-    display: flex;
-    border-radius: 15px;
-    background-color: #d9d9d9;
-    width: 550px;
-    height: 1004px;
-}
-.receba p{
-    margin-bottom: 40px;
-    text-align: center;
-    font-size: 40px;
-    font-weight: 600;
-}
-.receba{
-    margin-top: 55px;
-}
-.frase img{
-    margin-bottom: 186px;
-}
-.inputs{
-    gap: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.inputs button{
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: 96px;
-    width: 409px;
-    height: 151px;
-    font-weight: 600;
-    background-color: #8bcff1;
-    border: none;
-
-}
-.inputs button:hover{
-    background-color: #9ad6f4;
-}
-.inputs textarea{
-    font-size: 32px;
-    border-radius: 10px;
-    background-color: #2c383f12;
-    box-shadow: 0px 1px 6.6px black;
-    padding-left: 10px;
-    width: 477px;
-    height: 300px;
-
-}
-.inputs input{
-    font-size: 32px;
-    box-shadow: 0px 1px 6.6px black;
-    border: none;
-    background-color: #2c383f12;
-    width: 477px;
-    height: 61px;
-    border-radius: 10px;
-    padding-left: 10px;
-}
-.backapre{
-    background: url("imagens/Background\ geral.jpg");
-    
-    height: 2328px;
-    background-size:cover;
-    background-repeat:no-repeat;
-    background-position: center;
-    width: 1920px;
-    max-width: 1920px;
-}
-.card{
+header{
+    padding-top: 25px;
     display: flex;
     justify-content: space-between;
-    margin-left: 138px;
-    margin-right: 138px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 10px;
 }
-.card img{
-    width: 613px;
-    margin-top: 258px;
-    height: 575px;
-}
-.trabalhos{
-    margin-top: 164px;
-    margin-bottom: 64px;
+.iconsheader{
     display: flex;
-    justify-content: center;
+    gap: 21px;
 }
-.trabalhoscard{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 188px;
+.iconsheader img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
 }
-.backfooter{
-    background: url("imagens/backfooter.png");
-    height: 2152px;
-    width: 1930px;
+.backgroundform{
+    background: url("imagens/backgroundform.jpg");
+    width:100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    aspect-ratio: 1920/1080;
+    padding-top: 172px;
 }
-.ctn h2{
+.backgroundform .receba{
+    font-size: 44px;
     text-align: center;
-    padding-top: 120px;
-    font-size: 96px;
+    font-weight: 400;
+    text-shadow:-4px 6px 3px rgba(0, 0, 0, 0.25);
 }
-.formfooter{
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    border-radius: 15px;
-    margin-top: 108px;
-    width: 1206px;
-    height: 876px;
-    background-color: white;
-}
-.formfooter form{
-    width: 1080px;
-    height: 546px;
-    display: flex;
+.backgroundform form{
     flex-direction: column;
+    display: flex;
+    margin-top: 160px;
+    background-color:#d9d9d9;
+    border-radius: 10px;
+    padding: 25px 15px;
+    gap: 10px;
+
 }
-.tituloform p{
+.formulario{
+    justify-content: right;
+    display: flex;
+    max-height: 1000px;
+    margin-right: 32px;
+}
+.formulario p{
+    font-size: 30px;
+    text-align: center;
     font-weight: 600;
-   text-align: center;
-    margin-top: 50px;
-    margin-bottom: 30px;
+    padding-bottom:10px ;
 }
-.entradas{
-    gap: 35px;
+.formulario form input, textarea{
+    padding:7px;
+    border-radius: 5px;
+    border: none;
+    background-color: #2c383f13;
+    box-shadow: 0px 4px 6.6px 1px rgba(0, 0, 0, 0.25);
+}
+.formulario button{
+    padding: 20px;
+    background-color: #a3d7f1;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    font-size: 44px;
+}
+.formulario button:hover{
+    cursor: pointer;
+    background-color: #91cfee;
+}
+.backgroundmain{
+    background: url("imagens/backgroundmain.jpg");
+    min-height: 2080px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.caixas{
+    display: flex;
+    justify-content: space-evenly;
+}
+.caixa{
+    margin-top: 10rem;
+    padding-top: 30px;
+    min-height: 250px;
+    width: 300px;
+    background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 30px;
+    border-radius: 25px;
+    text-align: center;
 }
-.entradas button{
-    font-size: 96px;
-    width: 905.75px;
-    height: 129.19px;
-    border: none;
-    color: black;
+.caixa img{
+    width: 130px;
+    height: 130px;
+}
+.caixa p{
     font-weight: 600;
-    background-color: #a3d7f1;
+    font-size: 18px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.entradas button:hover{
-    cursor: pointer;
-    background-color: #8bcff1;
+.trabalhos{
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    display: flex;
 }
-.entradas input{
-    font-size: 32px;
-    padding-left: 60px;
-    width: 1056px;
-    border: none;
-    background-color: #2c383f12;
-    height: 52.19px;
+.cards{
+    padding: 5px 5px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     border-radius: 15px;
+    width: 620px;
+    min-height: 250px;
+    background-color: white;
 }
-.entradas textarea{
-    font-size: 32px;
-    padding-left: 60px;
-    width: 1056px;
-    border: none;
-    background-color: #2c383f12;
-    height: 256.67px;
+.beafter{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 25px;
+    font-weight: 600;
+}
+.titlet{
+    margin-top: 200px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+    color: #2c383f;
+    margin-bottom: 30px;
+}
+.cards .img{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.img img{
+    width: 200px;
+    min-width: 200px;
+}
+.backgroundcontato{
+    background: url("imagens/backfooter.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    aspect-ratio: 900/1000;
+    margin-top: 170px;
+}
+.backgroundcontato h2{
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+    padding-top:120px ;
+}
+.backgroundcontato .formulario{
+    min-height: 600px;
+    background-color: white;
+    width: 450px;
     border-radius: 15px;
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 120px;
+}
+.formulario form{
+    gap: 15px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+}
+.backgroundcontato img{
+    width: 300px;
+}
+.pho{
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
 }
