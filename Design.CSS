@@ -20,7 +20,7 @@ header .number{
     cursor: pointer;
     font-size: 25px;
     font-weight: 600;
-    transition: transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 header .number:hover{
     transform: scale(1.1);
@@ -28,7 +28,7 @@ header .number:hover{
 header .iconsheader img{
     width: 33px;
     height: 33px;
-    transition: transform 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 header{
     padding-top: 25px;
@@ -47,7 +47,7 @@ header{
     transform: scale(1.1);
 }
 .backgroundform{
-    background: url("imagens/backgroundform.jpg");
+    background-image: url("imagens/backgroundform.jpg");
     width:100%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -63,18 +63,19 @@ header{
 .backgroundform form{
     flex-direction: column;
     display: flex;
-    margin-top: 160px;
+    margin-top: 35px;
     background-color:#d9d9d9;
     border-radius: 10px;
     padding: 25px 15px;
     gap: 10px;
+    opacity: 90%;
 
 }
 .formulario{
     justify-content: right;
     display: flex;
     max-height: 1000px;
-    margin-right: 32px;
+    margin-right: 210px;
 }
 .formulario p{
     font-size: 30px;
@@ -124,6 +125,7 @@ header{
     gap: 30px;
     border-radius: 25px;
     text-align: center;
+    margin-bottom: 10rem;
 }
 .caixa img{
     width: 130px;
@@ -171,14 +173,7 @@ header{
     width: 200px;
     min-width: 200px;
 }
-.backgroundcontato{
-    background: url("imagens/backfooter.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    aspect-ratio: 900/1000;
-    margin-top: 170px;
-}
+
 .backgroundcontato h2{
     font-size: 30px;
     font-weight: 900;
@@ -202,11 +197,35 @@ header{
     display: flex;
     flex-direction: column;
 }
-.backgroundcontato img{
+.backgroundcontato .pho img{
     width: 300px;
 }
 .pho{
-    margin-top: 150px;
+    margin-top: 130px;
     display: flex;
     justify-content: center;
+}
+.sobre{
+    padding-top: 180px;
+}
+.sobre{
+    display: flex;
+    justify-content: center;
+}
+.sobrec{
+    color: #2C383F;
+    background-color: #bfbfbf;
+    border-radius: 54px;
+    padding: 25px;
+}
+.sobrec h2{
+    font-weight: 900;
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.sobrec p{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
 }
