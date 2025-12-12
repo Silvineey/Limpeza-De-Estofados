@@ -4,12 +4,13 @@
     box-sizing: border-box;
     list-style: none;
 }
-.backgroundheader{
-    background-size: cover;
-    background-repeat: no-repeat;
-    background: url("imagens/headerhero.png");
+
+header a{
+    color: black;
+    text-decoration: none;
 }
 body{
+    font-family: "inter", sans-serif;
     width: 100%;
 }
 header .title{
@@ -17,6 +18,7 @@ header .title{
     font-weight: 600;
 }
 header .number{
+    padding-top: 3px;
     cursor: pointer;
     font-size: 25px;
     font-weight: 600;
@@ -30,14 +32,22 @@ header .iconsheader img{
     height: 33px;
     transition: transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
-header{
+header {
+    background: linear-gradient(
+        to right,
+        rgba(163, 215, 241, 0.62),
+        rgba(44, 56, 63, 0.58)
+    );
     padding-top: 25px;
     display: flex;
     justify-content: space-between;
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 10px;
+    z-index: 999;
 }
+
+
 .iconsheader{
     display: flex;
     gap: 21px;
@@ -47,23 +57,24 @@ header{
     transform: scale(1.1);
 }
 .backgroundform{
-    background-image: url("imagens/backgroundform.jpg");
+    background-image: url("imagens/backgroundform.png");
     width:100%;
     background-size: cover;
     background-repeat: no-repeat;
-    aspect-ratio: 1920/1080;
-    padding-top: 172px;
+    aspect-ratio: 1920/1550;
 }
-.backgroundform .receba{
+.capa .receba{
     font-size: 44px;
     text-align: center;
     font-weight: 400;
+    color: white;
     text-shadow:-4px 6px 3px rgba(0, 0, 0, 0.25);
+    margin-top: 100px;
 }
-.backgroundform form{
+.capa form{
     flex-direction: column;
     display: flex;
-    margin-top: 35px;
+    margin-top: 210px;
     background-color:#d9d9d9;
     border-radius: 10px;
     padding: 25px 15px;
@@ -137,8 +148,9 @@ header{
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .trabalhos{
+    margin-bottom: 250px;
     justify-content: center;
-    gap: 30px;
+    gap: 400px;
     flex-wrap: wrap;
     display: flex;
 }
@@ -146,7 +158,7 @@ header{
     padding: 5px 5px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     border-radius: 15px;
-    width: 620px;
+    width: 500px;
     min-height: 250px;
     background-color: white;
 }
@@ -162,7 +174,7 @@ header{
     font-size: 30px;
     font-weight: 900;
     color: #2c383f;
-    margin-bottom: 30px;
+    margin-bottom: 100px;
 }
 .cards .img{
     display: flex;
@@ -170,15 +182,15 @@ header{
     gap: 30px;
 }
 .img img{
-    width: 200px;
-    min-width: 200px;
+    width: 190px;
+    min-width: 100px;
+    min-height: 150px;
 }
 
 .backgroundcontato h2{
     font-size: 30px;
     font-weight: 900;
     text-align: center;
-    padding-top:120px ;
 }
 .backgroundcontato .formulario{
     min-height: 600px;
@@ -189,7 +201,7 @@ header{
     display: flex;
     justify-content: center;
     margin: 0 auto;
-    margin-top: 120px;
+    margin-top: 20px;
 }
 .formulario form{
     gap: 15px;
